@@ -1,0 +1,70 @@
+<!--
+Hannah Guillen, UMass Lowell Computer Science
+  hannah_guillen@student.uml.edu, hguillen@cs.uml.edu
+Date: November 29, 2022
+File: index.html
+GUI Assignment: Using jQuery Plugin/UI with Dynamic Table
+  This file is the main HTML page.
+
+Copyright (c) 2022 by Hannah Guillen. All rights reserved. May be freely
+copied or excerpted for educational purposes with credit to the author.
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <!-- <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
+
+  <title>Interactive Dynamic Table</title>
+
+  <link rel="stylesheet" href="css/style.css">
+
+  <!-- jQuery link -->
+  <script src="https://code.jquery.com/jquery-3.6.1.js"
+          integrity="sha256-3zlB5s2uwoUzrXK3BT7AX3FyvojsraNFxCc2vC/7pNI=" crossorigin="anonymous"></script>
+  <!-- jQuery Validation Plugin -->
+  <script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.5/dist/jquery.validate.js"></script>
+
+  <!-- JS link -->
+  <script src="js/script.js"></script>
+</head>
+
+<body>
+  <!-- TITLE/ HEADER -->
+  <div class ="header">
+    <h1>Interactive Dynamic Table</h1>
+  </div>
+
+  <form id="signupForm" autocomplete="off">
+    <fieldset>
+      <legend> Multiplication Table</legend>
+      <p>
+        <label for="min_c">Minimumm Column Value</label>
+        <input id="min_c" name="min_c" type="text">
+      </p>
+      <p>
+        <label for="max_c">Maximum Column Value</label>
+        <input id="max_c" name="max_c" type="text">
+      </p>
+      <p>
+        <label for="min_r">Minimum Row Value</label>
+        <input id="min_r" name="min_r" type="text">
+      </p>
+      <p>
+        <label for="max_r">Maximum Row Value</label>
+        <input id="max_r" name="max_r" type="text">
+      </p>
+      <p>
+        <input class ="submit" type="submit" value="submit">
+      </p>
+    </fieldset>
+  </form>
+
+  <div id="tableBox">
+  </div>
+
+</body>
+</html>
