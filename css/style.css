@@ -1,1 +1,125 @@
+/*
+Hannah Guillen, UMass Lowell Computer Science
+  hannah_guillen@student.uml.edu, hguillen@cs.uml.edu
+Date: November 29, 2022
+File: style.css
+GUI Assignment: Using jQuery Plugin/UI with Dynamic Table
+  This CSS file styles and adds layout to webpage.
 
+Copyright (c) 2022 by Hannah Guillen. All rights reserved. May be freely
+copied or excerpted for educational purposes with credit to the author.
+*/
+
+/* Page title */
+.header{
+  margin-left: 100px;
+  text-align: center;
+  color: Thistle;
+  text-shadow: 2px 2px black;
+}
+
+/* Page body */
+body {
+  margin: 0;
+  background: #b47ede;
+  font-family: 'Courier New', monospace;
+}
+
+/* User input form */
+form {
+  margin: 50px;
+  width: 25%;
+  border: 3px solid #b660cd;
+  padding: 5px;
+  text-align: center;
+  background-color: Thistle;
+  border-radius: 5px;
+}
+
+/* .form {
+  display: flex;
+  align-items: start;
+  justify-content: left;
+} */
+
+/* Input text */
+.input {
+  display: inline-block;
+  width: 200px;
+  padding: 10px;
+  font-size: 12pt;
+}
+
+/* Input textboxes */
+input[type=text]{
+  border: 2px solid #b660cd;
+  border-radius: 5px;
+  text-align: center;
+  font-size: 11pt;
+  color: #b660cd;
+}
+
+/* Generate button style */
+#generate {
+  background-color: #b660cd;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  padding: 10px 25px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  transition: 0.25s ease;
+}
+
+/* Generate button hover action */
+#generate:hover {
+  transform: scale(1.1);
+}
+
+/* Table container box */
+#tableBox {
+  margin: 470px;
+  height: 500px;
+  overflow: auto;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  width: 60%;
+}
+
+/* Multiplication table */
+table {
+  border-collapse: collapse;
+  margin: auto;
+  width: 100%;
+  border: 3px solid #b660cd;
+  padding: 10px auto;
+  height: 100%;
+}
+
+/* Beginning X and Y boxes in table */
+.initial_xy {
+  background: rgb(149, 105, 191);
+  color: white;
+}
+
+/* Value boxes inside table */
+td {
+  border: 1px solid #b660cd;
+  padding: 3px;
+  text-align: center;
+  background-color: Thistle;
+}
+
+/* Responsive layout for media screens */
+@media screen and (max-width: 500px) {
+  form {
+    width: 80%;
+  }
+  #tableBox {
+    width: 90%;
+  }
+}
